@@ -2,12 +2,14 @@
 
 Dryad (datadryad.org) MCP — keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 808+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `search_datasets` | Search Dryad, a curated repository of open research datasets (mostly the data underlying published, peer-reviewed studies in any field of science). Full-text query over titles, abstracts, authors and keywords. Returns matching datasets with DOI, title, authors, truncated abstract, keywords, publication date, field of science and license. Keyless. |
+| `get_dataset` | Fetch a single Dryad dataset by its DOI (e.g. "doi:10.5061/dryad.hx3ffbgjj" or "10.5061/dryad.hx3ffbgjj"). Returns full metadata — title, authors, abstract, keywords, publication date, field of science, license, version — plus a download URL for the dataset files. Keyless. |
 
 ## Quick Start
 
@@ -23,7 +25,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 808+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +49,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
