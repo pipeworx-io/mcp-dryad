@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/dryad",
   "title": "Dryad",
   "description": "Dryad (datadryad.org) MCP — keyless.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://pipeworx.io/packs/dryad",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-dryad",
