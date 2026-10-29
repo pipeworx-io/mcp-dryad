@@ -1,0 +1,42 @@
+[
+  {
+    "name": "search_datasets",
+    "description": "Search Dryad, a curated repository of open research datasets (mostly the data underlying published, peer-reviewed studies in any field of science). Full-text query over titles, abstracts, authors and keywords. Returns matching datasets with DOI, title, authors, truncated abstract, keywords, publication date, field of science and license. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search terms (e.g. \"coral bleaching\", \"maize genome\")."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results per page (default 20, max 100)."
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number, 1-based (default 1)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_dataset",
+    "description": "Fetch a single Dryad dataset by its DOI (e.g. \"doi:10.5061/dryad.hx3ffbgjj\" or \"10.5061/dryad.hx3ffbgjj\"). Returns full metadata — title, authors, abstract, keywords, publication date, field of science, license, version — plus a download URL for the dataset files. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "doi": {
+          "type": "string",
+          "description": "Dataset DOI, with or without the \"doi:\" prefix (e.g. \"doi:10.5061/dryad.hx3ffbgjj\")."
+        }
+      },
+      "required": [
+        "doi"
+      ]
+    }
+  }
+]
