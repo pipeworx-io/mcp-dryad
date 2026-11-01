@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-dryad",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dryad (datadryad.org) MCP — keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "dryad",
     "gatewaySlug": "dryad",
-    "sourceHash": "v1-4f0681789fcdbb726ae8c6ba925452cc3c501a9f3a6de874d481ebccbc165854",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-6d7ddc51008727e7a8723b1011c59058a98bc13e9d401e0a55e67c2c758d4700",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
